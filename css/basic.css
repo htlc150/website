@@ -1,0 +1,287 @@
+html {margin: 0; padding: 0;}
+
+body {
+	margin: 0; padding: 0;
+	font-family: georgia, times, "times new roman", serif;
+	font-size: 80%;
+	line-height: 1.6;
+	/*background: #dda repeat-y url(../Pictures/brickcol.gif);*/
+	background-color: #ffffff;
+	/*** brickcol has RGB=882200 ***/
+	color: black;
+}
+            /*** Image is 180px wide, and 20px high ***/
+
+pre {margin: 0; font-family: verdana, sans-serif; font-size: .9em;}
+
+a {color: #000;}
+
+.alignright {margin-top: 0; text-align: right;}
+
+ul.square {list-style-type:square}
+
+.small {font-size: .9em;}
+.clear {clear: both;}
+
+.return {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	padding: .5em;
+}
+
+dd.christmas {
+	color: red;
+}
+
+p {}
+
+td {}
+
+a:link { color: #0000ff ; text-decoration: none; }
+
+a:visited { color: #800080 ; text-decoration: none; }
+
+a:hover { color: #33c ; text-decoration: none; }
+
+a:active { color: #ff0000 }
+
+#header  {
+display: block;
+background: #000 url(../Header/candles.jpg) repeat-x;
+background-position:39px 0px; 
+height: 100px;
+width: 100%;
+border-bottom: 0px;
+}
+
+#pageat {
+color: #5fa1dc;
+float: left;
+margin-left: 1em;
+}
+
+#cityst {
+color: #a4c5e7;
+float: left;
+margin-left: 2.5em;
+}
+
+.flash {
+   animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: #ffa500;}
+    to {color: black;}
+}
+
+#covid-19 a {
+   text-decoration: underline;
+   color: #a4c5e7;
+}
+#covid-19 a:visited {
+   color: #848587 ;
+}
+#covid-19 {
+font-size: 21px;
+color: #a4c5e7;
+float: right;
+margin-right: 2.5em;
+}
+
+h1, h2 {
+font-size: 15px;
+margin: 0px;
+color: #040;
+background-color: #fff;    /*** The header and footer have backgrounds, to cover the 2-tone body BG  ***/
+border-top: 4px solid #000;
+border-bottom: 3px solid #000;
+}
+
+h2 {
+background-color: #000; color: #fff;
+padding-left: 10px;
+}
+
+#diffBulBtn {
+	margin: 1em 0.15em;
+	color: #0d2474;
+}
+
+#row-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#row-menu li {
+	float: left;
+	margin: 1em 0.15em;
+}
+
+#row-menu li a {
+	background: #ddd bottom left repeat-x;
+	height: 2em;
+	line-height: 2em;
+	float: left;
+	width: 11em;
+	display: block;
+	border: 0.1em solid #444;
+	color: #0d2474;
+	text-decoration: none;
+	text-align: center;
+} 
+
+#socialMedia {
+	float: left;
+	width: 280px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#newsybits {
+	border-style: solid;
+	border-color: #8b9dc3;
+	padding-left: 5px;
+	float: left;
+	font-size: 85%;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#nav-menu {
+	float: left;
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+#nav-menu ul {
+	margin: 0 0 0 2px;
+	padding: 10px 0 0 0;
+	list-style: none;
+}
+
+#nav-menu ul li {
+	padding: 0px;
+	margin: 0 0 2px 0;
+}
+
+#nav-menu ul li a {
+	display: block;
+	padding: 6px 0 5px 3px;
+	font-size: 90%;
+	text-decoration: none;
+	color: #494960;
+	font-weight: bold;
+	outline: none;
+	background: url(../Pictures/nav_menu_divider.png) left bottom no-repeat;
+}
+
+#nav-menu li a:hover {
+	padding-left: 17px;
+}
+
+#nav-menu li .current{
+	padding-left: 17px;
+}
+
+/*** for pages with 3 columns ***/
+#leftbox3 {      /*** No side padding or borders, to avoid the IE5.x box model problem ***/
+position: absolute;
+width: 150px;
+left: 13px;
+padding-top: 1em;
+}
+
+#middlePic {
+	overflow: hidden;
+}
+
+#churchPic {
+	overflow: hidden;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3px;
+}
+
+/*** for pages with 3 columns ***/
+#middlebox3 a {
+   text-decoration: underline;
+   color: #0000cc;
+}
+
+#middlebox3 {
+	margin: 0 35% 0 170px;
+	padding: 20px;
+	padding-top: 10px;
+}
+
+/*** for pages with 3 columns ***/
+#rightbox3 {    /*** No side padding or borders, to avoid the IE5.x box model problem ***/
+	position: absolute;
+	right: 25px;     /*** IE5/mac will show a horizontal scrollbar 
+		if this is less than 16px, or other units are used
+		http://www.l-c-n.com/IE5tests/right_pos/index.shtml ***/           
+	width: 30%;
+	color: #820;
+	padding-top: 10px;
+}
+
+#rightbox3 dd {
+	margin-left: 1em;
+}
+
+/*** for pages with 2 columns ***/
+#leftbox2
+{
+	float: left;
+	width: 150px;
+	padding-top: 1em;
+}
+
+#leftbox2 p { margin-top: 0; }
+
+#middlebox2 {
+	margin: 0 0 0 170px;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	padding: 10px;
+	background-color: #a4c5e7;     /*** This div has a background to cover the 2-tone body BG ***/
+}
+
+/*** for pages with 2 columns ***/
+#rightbox2
+{
+	padding-top: 1em;
+	margin: 0 2em 0 200px;
+}
+
+#rightbox2 h2 { margin-top: 0; }
+
+.floatleft {
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+
+.floatright {
+	float: right;
+	margin: 10px 0 10px 10px;
+}
+
+/*** for the galleria plugin ***/
+.galleria {
+	width: 700px;
+	height: 400px;
+	background: #000
+}

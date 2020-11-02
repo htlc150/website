@@ -1,0 +1,20 @@
+*.html~
+*.js~
+*.js.swo
+*.js.swn
+*.sh~
+*.md~
+*.css~
+*.txt
+*.txt~
+*.xcf
+.gitignore~
+*.swp
+
+counting_files
+Header
+pdf
+Pictures
+
+# Local Netlify folder
+.netlify
