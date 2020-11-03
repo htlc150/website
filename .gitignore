@@ -10,11 +10,3 @@
 *.xcf
 .gitignore~
 *.swp
-
-counting_files
-Header
-pdf
-Pictures
-
-# Local Netlify folder
-.netlify
